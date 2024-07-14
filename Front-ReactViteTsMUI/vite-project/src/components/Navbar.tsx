@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import { styled } from '@mui/system';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 const Logo = styled('img')({
     height: 40, // Ajustez la hauteur selon vos besoins
@@ -32,11 +33,12 @@ const Navbar = () => {
 
                 {/* Conteneur des boutons */}
                 <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2 }}>
-                    <Button color="inherit">Carte</Button>
-                    <Button color="inherit">Blog</Button>
-                    <Button color="inherit">Galerie</Button>
-                    <Button color="inherit">Contact</Button>
-                    <Button color="inherit">Connexion</Button>
+                    <Button color="inherit" component={Link} to="/">Carte</Button>
+                    <Button color="inherit" component={Link} to="/blog">Blog</Button>
+                    <Button color="inherit" component={Link} to="/gallery">Galerie</Button>
+                    <Button color="inherit" component={Link} to="/contact">Contact</Button>
+                    <Button color="inherit" component={Link} to="/login">Connexion</Button>
+
                 </Box>
             </Toolbar>
         </AppBar>
