@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';  // Correspond à Navbar.tsx
-import Accueil from './components/Navbar';  // Correspond à Navbar.tsx
+import Accueil from './components/Accueil';  // Correspond à Navbar.tsx
 import Carte from './components/Carte';
 import Blog from './components/Blog';
 import Galerie from './components/Galerie';
@@ -13,8 +13,8 @@ const App: React.FC = () => {
     <Router>
       <Navbar />
       <Routes>
-        {/* <Route path="/" element={<Accueil />} /> */}
-        <Route path="/Carte" element={<Carte />} />
+        <Route path="/" element={<Accueil />} />
+        <Route path="/carte" element={<Carte />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/galerie" element={<Galerie />} />
         <Route path="/contact" element={<Contact />} />
