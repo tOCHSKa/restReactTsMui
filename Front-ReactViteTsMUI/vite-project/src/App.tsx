@@ -7,6 +7,7 @@ import Galerie from './components/Galerie';
 import Contact from './components/Contact';
 import Connexion from './components/Connexion';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/connexion" element={<Connexion />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

@@ -38,9 +38,9 @@ const Navbar = () => {
                 <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2 }}>
                     <Button color="inherit" component={Link} to="/carte">Carte</Button>
                     <Button color="inherit" component={Link} to="/blog">Blog</Button>
-                    <Button color="inherit" component={Link} to="/gallery">Galerie</Button>
+                    <Button color="inherit" component={Link} to="/galerie">Galerie</Button>
                     <Button color="inherit" component={Link} to="/contact">Contact</Button>
-                    <Button color="inherit" component={Link} to="/login">Connexion</Button>
+                    <Button color="inherit" component={Link} to="/connexion">Connexion</Button>
                 </Box>
             </Toolbar>
         </AppBar>
