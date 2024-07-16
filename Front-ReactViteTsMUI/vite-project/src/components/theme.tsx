@@ -1,12 +1,24 @@
-import { createTheme } from "@mui/material";
+// theme.ts
+import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
-    palette:{
-        primary:{
-            main:"#E6DCDC"
+    palette: {
+        primary: {
+            main: "#E6DCDC",
         },
-        secondary:{
-            main:"#F0F0F0"
+        secondary: {
+            main: "#F0F0F0",
         },
-    }
-})
+    },
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: {
+                '*': {
+                    fontFamily: '"Montserrat", sans-serif',
+                    margin: 0,
+                    padding: 0,
+                },
+            },
+        },
+    },
+});
