@@ -1,38 +1,36 @@
-import { Box, ListItem, Typography } from "@mui/material"
-import { theme } from "./theme"
-import React, { ReactNode } from 'react';
+import React from "react";
+import { styled } from "@mui/material/styles";
+import { Box, Button } from "@mui/material";
 
+const FooterContainer = styled(Box)(({ theme }) => ({
+    backgroundColor: theme.palette.secondary.main,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "start",
+    padding: theme.spacing(5),
+}));
 
-// Définir le type des props pour StyledListItem
-interface StyledListItemProps {
-    children: ReactNode;
+const FooterButton = styled(Button)(({ theme }) => ({
+    marginBottom: theme.spacing(2),
+    color: theme.palette.text.primary,
+    '&:hover': {
+        backgroundColor: 'transparent',
+        textDecoration: 'underline',
+    },
+}));
+
+interface FooterProps {
+    // Ici tu pourra ajouter si tu add des props au component plus tard les types des props reçus
 }
 
-// Utiliser le type des props dans le composant StyledListItem
-const StyledListItem: React.FC<StyledListItemProps> = ({ children }) => (
-    <ListItem sx={{ listStyleType: 'none', marginBottom: 2 }}>
-        <Typography variant="body1">{children}</Typography>
-    </ListItem>
+const Footer: React.FC<FooterProps> = () => (
+    <FooterContainer component="footer">
+        <FooterButton>Contact</FooterButton>
+        <FooterButton>Mentions Légales</FooterButton>
+        <FooterButton>Conditions Générales D'utilisation</FooterButton>
+        <FooterButton>Gestion des Cookies</FooterButton>
+    </FooterContainer>
 );
 
-const Footer = () => {
-    return (
-        <Box component="ul" sx={{
-            backgroundColor: theme.palette.secondary.main,
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            padding: '40px'
-        }}>
-            {/* sx={{ padding: 0, margin: 0 }}> */}
-            <StyledListItem>Contact</StyledListItem>
-            <StyledListItem>Mentions Légales</StyledListItem>
-            <StyledListItem>Conditions Générales D'utilisation</StyledListItem>
-            <StyledListItem>Gestion des Cookies</StyledListItem>
-        </Box>
-        
-    )
-}
-
-export default Footer
+export default Footer;
