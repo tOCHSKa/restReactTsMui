@@ -12,10 +12,12 @@ const Image = styled('img')({
 const StyledImage = styled('img')(({ theme }) => ({
     height: 'auto',
     width: '91%',
+    borderRadius: '4px',
     [theme.breakpoints.up('sm')]: {
         height: '300px',
         width: 'auto',
     },
+    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
 }));
 
 const StyledBoxBanner = styled(Box)(({ theme }) => ({
@@ -51,6 +53,8 @@ const images = [
 const StyledImageGrid = styled('img')({
     width: '100%',
     height: 'auto',
+    borderRadius: '4px',
+    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
 });
 
 const ImageContainer = styled(Box)({
