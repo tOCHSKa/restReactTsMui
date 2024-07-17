@@ -13,6 +13,7 @@ const FooterContainer = styled(Box)(({ theme }) => ({
 
 const FooterButton = styled(Button)(({ theme }) => ({
     marginBottom: theme.spacing(2),
+    fontFamily: '"Montserrat", sans-serif',
     color: theme.palette.text.primary,
     '&:hover': {
         backgroundColor: 'transparent',
@@ -28,7 +29,7 @@ const Footer: React.FC<FooterProps> = () => (
     <FooterContainer component="footer">
         <FooterButton>Contact</FooterButton>
         <FooterButton>Mentions Légales</FooterButton>
-        <FooterButton>Conditions Générales D'utilisation</FooterButton>
+        <FooterButton>Conditions</FooterButton>
         <FooterButton>Gestion des Cookies</FooterButton>
     </FooterContainer>
 );

@@ -2,7 +2,7 @@ import Root from './routes/Root'
 
 const App: React.FC = () => {
   return (
-      <Root />
+    <Root />
   );
 };
 export default App;

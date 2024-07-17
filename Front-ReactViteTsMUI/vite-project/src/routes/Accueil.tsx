@@ -1,7 +1,7 @@
-import { Box, Grid, styled, Typography } from '@mui/material';
+import { Box, Grid, styled, Typography, Paper, Container } from '@mui/material';
 import React from 'react';
 import { theme } from "../components/theme"
-import Paper from '@mui/material/Paper';
+
 
 const Image = styled('img')({
     height: '74%',
@@ -11,7 +11,7 @@ const Image = styled('img')({
 
 const StyledImage = styled('img')(({ theme }) => ({
     height: 'auto',
-    width: '100%',
+    width: '91%',
     [theme.breakpoints.up('sm')]: {
         height: '300px',
         width: 'auto',
@@ -29,40 +29,36 @@ const StyledBoxBanner = styled(Box)(({ theme }) => ({
 const StyledBoxTitle = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column', // Default flexDirection
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '0',
+    margin: '2rem 0',
     [theme.breakpoints.up('sm')]: {
         flexDirection: 'row', // flexDirection for sm and up
-        padding: '2rem 0',
+        margin: '2rem 0',
     },
 }));
 
-const StyledBoxMenu = styled(Box)({
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly'
-})
+const images = [
+    { id: '1', title: 'Image 1', src: "/photo1.jpg" },
+    { id: '2', title: 'Image 2', src: "/photo2.jpg" },
+    { id: '3', title: 'Image 3', src: "/photo3.jpg" },
+    { id: '4', title: 'Image 4', src: "/photo4.jpg" },
+    { id: '5', title: 'Image 5', src: "/photo5.jpg" },
+    { id: '6', title: 'Image 6', src: "" },
+];
+
+const StyledImageGrid = styled('img')({
+    width: '100%',
+    height: '100%'
+});
 
 const Item = styled(Box)(({ theme }) => ({
-    padding: theme.spacing(2),
+    padding: theme.spacing(0),
     textAlign: 'center',
+    alignItems: 'center',
     color: theme.palette.text.secondary,
 }));
 
-const images = [
-    { src: '/accueil.jpg', alt: 'Image 1' },
-    { src: '/accueil.jpg', alt: 'Image 2' },
-    { src: '/accueil.jpg', alt: 'Image 3' },
-    { src: '/accueil.jpg', alt: 'Image 4' },
-];
-
-// Composant pour styliser les images
-const StyledGrid = styled('img')({
-    width: '100%',
-    // marginTop: 8,
-    verticalAlign: 'middle',
-});
 
 const Accueil: React.FC = () => {
     return (
@@ -77,25 +73,44 @@ const Accueil: React.FC = () => {
                     This is Italianno Font
                 </Typography>
             </StyledBoxBanner>
-            <StyledBoxTitle>
-                <Box>
-                    <Typography variant="h6" p={5} textAlign="center">DECOUVREZ LA SELECTION DU CHEF</Typography>
-                </Box>
-                <Box>
-                    <StyledImage src="/chef.jpg" alt="Image 1" />
-                </Box>
-            </StyledBoxTitle>
-            <Box sx={{ flexGrow: 1, padding: '0 2rem' }}>
-                <Grid container spacing={2}>
-                    {images.map((image, index) => (
-                        <Grid item xs={12} sm={6} md={3} key={index}>
-                            <StyledGrid src={image.src} alt={image.alt} />
-                            <Typography variant="h6" sx={{ textAlign: 'center', mt: 1 }}>Title</Typography>
-                            <Typography variant="body2" sx={{ textAlign: 'center' }}>Text Description</Typography>
+            <Container maxWidth="lg" sx={{ maxWidth: '1200px' }}>
+                <StyledBoxTitle>
+                    <Box>
+                        <Typography variant="h6" p={5} textAlign="center">DECOUVREZ LA SELECTION DU CHEF</Typography>
+                    </Box>
+                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 0' }}>
+                        <StyledImage src="/chef.jpg" alt="Image 1" />
+                    </Box>
+                </StyledBoxTitle>
+                <Box sx={{ flexGrow: 1 }}>
+                    <Grid container spacing={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={6}>
+                            <Item><StyledImageGrid src="/photo1.jpg" alt="Image 1" /></Item>
                         </Grid>
-                    ))}
-                </Grid>
-            </Box>
+                        <Grid item xs={12} sm={12} md={6} lg={6}>
+                            <Item><StyledImageGrid src="/photo2.jpg" alt="Image 1" /></Item>
+                        </Grid>
+                    </Grid>
+                </Box>
+                <Box sx={{ flexGrow: 1, margin: '2rem 0' }}>
+                    <Grid container spacing={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={3}>
+                            <Item><StyledImageGrid src="/photo1.jpg" alt="Image 1" /></Item>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={6} lg={3}>
+                            <Item><StyledImageGrid src="/photo2.jpg" alt="Image 1" /></Item>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={6} lg={3}>
+                            <Item><StyledImageGrid src="/photo3.jpg" alt="Image 1" /></Item>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={6} lg={3}>
+                            <Item><StyledImageGrid src="/photo3.jpg" alt="Image 1" /></Item>
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Container>
+
+
         </>
     );
 };
