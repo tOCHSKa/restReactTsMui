@@ -34,7 +34,7 @@ const StyledBoxTitle = styled(Box)(({ theme }) => ({
     margin: '2rem 0',
     [theme.breakpoints.up('sm')]: {
         flexDirection: 'row', // flexDirection for sm and up
-        margin: '2rem 0',
+        margin: '4rem 0',
     },
 }));
 
@@ -47,18 +47,35 @@ const images = [
     { id: '6', title: 'Image 6', src: "" },
 ];
 
+
 const StyledImageGrid = styled('img')({
     width: '100%',
-    height: '100%'
+    height: 'auto',
 });
 
-const Item = styled(Box)(({ theme }) => ({
-    padding: theme.spacing(0),
-    textAlign: 'center',
+const ImageContainer = styled(Box)({
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
     alignItems: 'center',
-    color: theme.palette.text.secondary,
-}));
+});
 
+const CenteredBox = styled(Box)({
+    position: 'absolute',
+    width: '100%',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    textAlign: 'center',
+    color: 'white',
+    background: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background for better text visibility
+    padding: '1rem',
+    maxWidth: '100%', // Ensure the text does not overflow
+    wordWrap: 'break-word', // Break long words
+    [theme.breakpoints.up('sm')]: {
+        maxWidth: '100%', // Adjust the width for larger screens
+    },
+});
 
 const Accueil: React.FC = () => {
     return (
@@ -85,26 +102,62 @@ const Accueil: React.FC = () => {
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={6}>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
-                            <Item><StyledImageGrid src="/photo1.jpg" alt="Image 1" /></Item>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" ></Typography>
+                                </CenteredBox>
+                            </ImageContainer>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
-                            <Item><StyledImageGrid src="/photo2.jpg" alt="Image 1" /></Item>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" ></Typography>
+                                </CenteredBox>
+                            </ImageContainer>
                         </Grid>
                     </Grid>
                 </Box>
-                <Box sx={{ flexGrow: 1, margin: '2rem 0' }}>
+                <Box sx={{ flexGrow: 1, margin: '4rem 0' }}>
                     <Grid container spacing={6}>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
-                            <Item><StyledImageGrid src="/photo1.jpg" alt="Image 1" /></Item>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" ></Typography>
+                                </CenteredBox>
+                            </ImageContainer>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
-                            <Item><StyledImageGrid src="/photo2.jpg" alt="Image 1" /></Item>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo2.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" ></Typography>
+                                </CenteredBox>
+                            </ImageContainer>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
-                            <Item><StyledImageGrid src="/photo3.jpg" alt="Image 1" /></Item>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" ></Typography>
+                                </CenteredBox>
+                            </ImageContainer>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
-                            <Item><StyledImageGrid src="/photo3.jpg" alt="Image 1" /></Item>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" ></Typography>
+                                </CenteredBox>
+                            </ImageContainer>
                         </Grid>
                     </Grid>
                 </Box>
