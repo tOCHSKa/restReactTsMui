@@ -9,6 +9,9 @@ export const theme = createTheme({
         secondary: {
             main: "#F0F0F0",
         },
+        info: {
+            main: "#FAFAFA",
+        }
     },
     components: {
         MuiCssBaseline: {

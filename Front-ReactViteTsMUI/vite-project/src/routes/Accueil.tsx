@@ -1,4 +1,4 @@
-import { Box, Grid, styled, Typography, Paper, Container } from '@mui/material';
+import { Box, Grid, styled, Typography, Paper, Container, Button } from '@mui/material';
 import React from 'react';
 import { theme } from "../components/theme"
 
@@ -67,18 +67,20 @@ const ImageContainer = styled(Box)({
 const CenteredBox = styled(Box)({
     position: 'absolute',
     width: '100%',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
+    height: '100%', // Take the full height of the parent container
+    top: '0', // Align to the top of the container
+    left: '0',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     textAlign: 'center',
+    flexDirection: 'column',
     color: 'white',
-    background: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background for better text visibility
+    background: 'rgba(0, 0, 0, 0.5)',
     padding: '1rem',
-    maxWidth: '100%', // Ensure the text does not overflow
-    wordWrap: 'break-word', // Break long words
-    [theme.breakpoints.up('sm')]: {
-        maxWidth: '100%', // Adjust the width for larger screens
-    },
+    boxSizing: 'border-box', // Ensure padding does not overflow the container
+    wordWrap: 'break-word',
+    borderRadius: '4px'
 });
 
 const Accueil: React.FC = () => {
@@ -110,7 +112,7 @@ const Accueil: React.FC = () => {
                                 <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" ></Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -119,7 +121,7 @@ const Accueil: React.FC = () => {
                                 <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" ></Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -132,7 +134,7 @@ const Accueil: React.FC = () => {
                                 <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" ></Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -141,7 +143,7 @@ const Accueil: React.FC = () => {
                                 <StyledImageGrid src="/photo2.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" ></Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -150,7 +152,7 @@ const Accueil: React.FC = () => {
                                 <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" ></Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -159,7 +161,7 @@ const Accueil: React.FC = () => {
                                 <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" ></Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
