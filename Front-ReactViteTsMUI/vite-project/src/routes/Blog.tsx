@@ -1,7 +1,8 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, FormControl, Grid, InputLabel, MenuItem, Select, Typography } from "@mui/material";
 import Bandeau from "../components/Bandeau";
 import { styled } from "@mui/system";
 import { theme } from "../components/theme";
+import SelectComponant from "../components/SelectComponant";
 
 const StyledBoxTitle = styled(Box)(({ theme }) => ({
     display: 'flex',
@@ -58,6 +59,7 @@ const CenteredBox = styled(Box)({
     borderRadius: '4px'
 });
 
+
 const Blog = () => {
     return (
         <>
@@ -83,16 +85,47 @@ const Blog = () => {
                     Les derniers articles
                 </Typography>
             </Box>
-            <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center', justifyContent: 'center', gap: '20px', marginTop: '2rem' }}>
-                <Button color="inherit">Tous</Button>
-                <Button color="inherit">Acticle1</Button>
-                <Button color="inherit">Acticle1</Button>
-                <Button color="inherit">Acticle1</Button>
-                <Button color="inherit">Acticle1</Button>
-            </Box>
+
             <Container maxWidth="lg" sx={{ maxWidth: '1200px' }}>
+                <SelectComponant />
                 <Box sx={{ flexGrow: 1, margin: '2rem 0' }}>
                     <Grid container spacing={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={3}>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                </CenteredBox>
+                            </ImageContainer>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={6} lg={3}>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo2.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                </CenteredBox>
+                            </ImageContainer>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={6} lg={3}>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                </CenteredBox>
+                            </ImageContainer>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={6} lg={3}>
+                            <ImageContainer>
+                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <CenteredBox>
+                                    <Typography variant="h5">La carte</Typography>
+                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                </CenteredBox>
+                            </ImageContainer>
+                        </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
                                 <StyledImageGrid src="/photo1.jpg" alt="Image 1" />

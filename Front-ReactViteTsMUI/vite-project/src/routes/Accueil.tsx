@@ -96,7 +96,7 @@ const Accueil: React.FC = () => {
                     This is Italianno Font
                 </Typography>
             </StyledBoxBanner>
-            <Container maxWidth="lg" sx={{ maxWidth: '1200px' }}>
+            <Container maxWidth="lg" sx={{ maxWidth: '1200px'}}>
                 <StyledBoxTitle>
                     <Box>
                         <Typography variant="h6" p={5} textAlign="center">DECOUVREZ LA SELECTION DU CHEF</Typography>
