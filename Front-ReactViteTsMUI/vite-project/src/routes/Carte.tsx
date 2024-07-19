@@ -32,7 +32,7 @@ const StyledImage = styled('img')(({ theme }) => ({
     },
     [theme.breakpoints.up('xs')]: {
         height: '300px',
-        width: '300px',
+        width: '352px',
     },
     boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
 }));
@@ -61,26 +61,56 @@ const Carte = () => {
                         <Button variant="contained" href="#contained-buttons" sx={{ width: '50%', marginBottom: '24px' }}>Antipasti à partager</Button>
                     </Box>
                     <StyledBox>
-                        <StyledImage src="/chef.jpg" alt="Image 1" />
+                        <StyledImage src="/antipasti1.jpg" alt="antipasti" />
                     </StyledBox>
                     <StyledBox>
-                        <StyledImage src="/chef.jpg" alt="Image 1" />
+                        <StyledImage src="/antipasti2.jpg" alt="antipasti" />
                     </StyledBox>
                 </StyledBoxTitle>
                 <StyledBoxTitleReverse>
                     <StyledBox>
-                        <StyledImage src="/chef.jpg" alt="Image 1" />
+                        <StyledImage src="/salad1.jpg" alt="salad" />
                     </StyledBox>
                     <StyledBox>
-                        <StyledImage src="/chef.jpg" alt="Image 1" />
+                        <StyledImage src="/salad2.jpg" alt="salad" />
                     </StyledBox>
                     <Box m={2} sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography variant="h3" textAlign="center" sx={{ fontFamily: 'Italianno, cursive', marginBottom: '24px' }}>Salades gourmandes</Typography>
                         <Typography variant="body1" textAlign="center" sx={{ marginBottom: '24px' }}>Non esiste un profumo più buono del pomodoro e basilico.
                             Sa di casa, di felicità, di condivisione.</Typography>
-                        <Button variant="contained" href="#contained-buttons" sx={{ width: '50%', marginBottom: '24px' }}>Salades gourmandes</Button>
+                        <Button variant="contained" href="#contained-buttons" sx={{ width: '60%', marginBottom: '24px' }}>Salades gourmandes</Button>
                     </Box>
                 </StyledBoxTitleReverse>
+                <StyledBoxTitle>
+                    <Box m={2} sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
+                        <Typography variant="h3" textAlign="center" sx={{ fontFamily: 'Italianno, cursive', marginBottom: '24px' }}>Pizza</Typography>
+                        <Typography variant="body1" textAlign="center" sx={{ marginBottom: '24px' }}>Fatte ‘na pizza c’a pummarola ‘ncoppa
+                            vedrai che il mondo poi ti sorriderà.</Typography>
+                        <Button variant="contained" href="#contained-buttons" sx={{ width: '50%', marginBottom: '24px' }}>Pizza</Button>
+                    </Box>
+                    <StyledBox>
+                        <StyledImage src="/pizza1.jpg" alt="pizza" />
+                    </StyledBox>
+                    <StyledBox>
+                        <StyledImage src="/pizza2.jpg" alt="pizza" />
+                    </StyledBox>
+                </StyledBoxTitle>
+
+                <StyledBoxTitleReverse>
+                    <StyledBox>
+                        <StyledImage src="/pasta1.jpg" alt="pasta" />
+                    </StyledBox>
+                    <StyledBox>
+                        <StyledImage src="/pasta2.jpg" alt="pasta" />
+                    </StyledBox>
+                    <Box m={2} sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
+                        <Typography variant="h3" textAlign="center" sx={{ fontFamily: 'Italianno, cursive', marginBottom: '24px' }}>Pasta</Typography>
+                        <Typography variant="body1" textAlign="center" sx={{ marginBottom: '24px' }}>La vita è una combinazione di pasta e magia.
+                            (Federico Fellini – regista)</Typography>
+                        <Button variant="contained" href="#contained-buttons" sx={{ width: '60%', marginBottom: '24px' }}>Pasta</Button>
+                    </Box>
+                </StyledBoxTitleReverse>
+
             </Container>
         </>
     )
