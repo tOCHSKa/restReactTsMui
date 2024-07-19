@@ -17,7 +17,7 @@ const StyledImage = styled('img')(({ theme }) => ({
         height: '300px',
         width: 'auto',
     },
-    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+    boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
 }));
 
 const StyledBoxBanner = styled(Box)(({ theme }) => ({
@@ -54,7 +54,7 @@ const StyledImageGrid = styled('img')({
     width: '100%',
     height: 'auto',
     borderRadius: '4px',
-    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+    boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
 });
 
 const ImageContainer = styled(Box)({
@@ -89,14 +89,15 @@ const Accueil: React.FC = () => {
             <StyledBoxBanner sx={{
             }}>
                 <Image src="/herobanner.png" alt="Accueil" />
-                <Typography variant='h6' sx={{ paddingTop: theme.spacing(5), textAlign: 'center', mb: '40px' }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.
+                <Typography variant='h6' sx={{ paddingTop: theme.spacing(5), textAlign: 'center', mb: '40px', width: '70%' }}>
+                    La FOSSETA vous invite à un savoureux voyage au coeur de l’Italie authentique.
+                    Goûtez les trésors gustatifs de la cuisine italienne traditionnelle au sein d’une ambiance contemporaine…
                 </Typography>
                 <Typography variant='h2' pb={5} sx={{ fontFamily: 'Italianno, cursive', paddingBottom: theme.spacing(5), textAlign: 'center' }}>
-                    This is Italianno Font
+                    Buon Viaggio
                 </Typography>
             </StyledBoxBanner>
-            <Container maxWidth="lg" sx={{ maxWidth: '1200px'}}>
+            <Container maxWidth="lg" sx={{ maxWidth: '1200px' }}>
                 <StyledBoxTitle>
                     <Box>
                         <Typography variant="h6" p={5} textAlign="center">DECOUVREZ LA SELECTION DU CHEF</Typography>
@@ -168,8 +169,6 @@ const Accueil: React.FC = () => {
                     </Grid>
                 </Box>
             </Container>
-
-
         </>
     );
 };

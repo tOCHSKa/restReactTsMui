@@ -85,7 +85,6 @@ const Blog = () => {
                     Les derniers articles
                 </Typography>
             </Box>
-
             <Container maxWidth="lg" sx={{ maxWidth: '1200px' }}>
                 <SelectComponant />
                 <Box sx={{ flexGrow: 1, margin: '2rem 0' }}>
@@ -165,7 +164,6 @@ const Blog = () => {
                     </Grid>
                 </Box>
             </Container>
-
         </>
     );
 };
