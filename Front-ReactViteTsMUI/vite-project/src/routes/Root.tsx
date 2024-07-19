@@ -4,10 +4,13 @@ import Carte from './Carte';
 import Blog from './Blog';
 import Galerie from './Galerie';
 import Contact from './Contact';
-import Connexion from '../components/Connexion';
+import Connexion from './Connexion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
+import Create from './Create';
+import Login from '../components/Login';
+import RegisterForm from '../components/Register';
 
 const Root: React.FC = () => {
     return (
@@ -21,6 +24,7 @@ const Root: React.FC = () => {
                 <Route path="/galerie" element={<Galerie />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/connexion" element={<Connexion />} />
+                <Route path="/register" element={<Create />} />
             </Routes>
             <Footer />
         </Router>
