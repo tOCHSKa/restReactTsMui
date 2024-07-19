@@ -7,10 +7,12 @@ import Contact from './Contact';
 import Connexion from '../components/Connexion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Root: React.FC = () => {
     return (
         <Router>
+            <ScrollToTop />
             <Navbar />
             <Routes>
                 <Route path="/" element={<Accueil />} />
