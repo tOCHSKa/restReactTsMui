@@ -27,7 +27,7 @@ const RegisterForm = () => {
                         type="text"
                         variant='outlined'
                         color='secondary'
-                        label="First Name"
+                        label="Prénom"
                         onChange={e => setFirstName(e.target.value)}
                         value={firstName}
                         fullWidth
@@ -37,7 +37,7 @@ const RegisterForm = () => {
                         type="text"
                         variant='outlined'
                         color='secondary'
-                        label="Last Name"
+                        label="Nom"
                         onChange={e => setLastName(e.target.value)}
                         value={lastName}
                         fullWidth
@@ -70,16 +70,16 @@ const RegisterForm = () => {
                     type="date"
                     variant='outlined'
                     color='secondary'
-                    label="Date of Birth"
+                    // label="Date of Birth"
                     onChange={e => setDateOfBirth(e.target.value)}
                     value={dateOfBirth}
                     fullWidth
                     required
                     sx={{ mb: 4 }}
                 />
-                <Button variant="contained" color="primary" type="submit">Register</Button>
+                <Button variant="contained" color="primary" type="submit">Enregistrer</Button>
             </form>
-            <small>Already have an account? <Link to="/connexion">Login Here</Link></small>
+            <small>Vous avez déjà un compte? <Link to="/connexion">Connexion</Link></small>
 
         </React.Fragment>
     )

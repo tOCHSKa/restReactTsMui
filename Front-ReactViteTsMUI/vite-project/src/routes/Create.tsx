@@ -1,4 +1,4 @@
-import { Box, Container, FormControl, FormLabel, styled, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import RegisterForm from '../components/Register';
 import Bandeau from '../components/Bandeau';
 

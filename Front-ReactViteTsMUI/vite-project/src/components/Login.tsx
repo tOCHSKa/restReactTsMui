@@ -57,7 +57,7 @@ const Login = () => {
                 <Button variant="contained" color="primary" type="submit">Connexion</Button>
 
             </form>
-            <small>Need an account? <Link to="/register">Register here</Link></small>
+            <small>Besoin d'un compte ? <Link to="/register">Enregistrez vous ici</Link></small>
         </React.Fragment>
     );
 }

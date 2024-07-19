@@ -9,8 +9,8 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import Create from './Create';
-import Login from '../components/Login';
-import RegisterForm from '../components/Register';
+import React from 'react';
+
 
 const Root: React.FC = () => {
     return (
