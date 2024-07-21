@@ -87,7 +87,7 @@ const Navbar = () => {
                 </Popover>
                 <Box sx={{ flexGrow: 1, textAlign: { xs: 'center', sm: 'left' } }}>
                     <Box component={Link} to="/" sx={{ display: 'inline-block' }}>
-                        <Logo src="/logo.png" alt="Mon Logo" />
+                        <Logo src="/img/logo/logo.png" alt="Mon Logo" />
                     </Box>
                 </Box>
                 {/* Conteneur des boutons */}

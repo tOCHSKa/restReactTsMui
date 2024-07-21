@@ -79,7 +79,7 @@ const Accueil: React.FC = () => {
         <>
             <StyledBoxBanner sx={{
             }}>
-                <Image src="/herobanner.png" alt="Accueil" />
+                <Image src="/img/home/herobanner.png" alt="Accueil" />
                 <Typography variant='h6' sx={{ paddingTop: theme.spacing(5), textAlign: 'center', mb: '40px', width: '70%' }}>
                     La FOSSETA vous invite à un savoureux voyage au coeur de l’Italie authentique.
                     Goûtez les trésors gustatifs de la cuisine italienne traditionnelle au sein d’une ambiance contemporaine…
@@ -94,14 +94,14 @@ const Accueil: React.FC = () => {
                         <Typography variant="h6" p={5} textAlign="center">DECOUVREZ LA SELECTION DU CHEF</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 0' }}>
-                        <StyledImage src="/chef.jpg" alt="Image 1" />
+                        <StyledImage src="/img/home/chef.jpg" alt="Image 1" />
                     </Box>
                 </StyledBoxTitle>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={6}>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/home/photo1.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -110,7 +110,7 @@ const Accueil: React.FC = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/home/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -123,7 +123,7 @@ const Accueil: React.FC = () => {
                     <Grid container spacing={6}>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/home/photo1.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -132,7 +132,7 @@ const Accueil: React.FC = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo2.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/home/photo2.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -141,7 +141,7 @@ const Accueil: React.FC = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/home/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -150,7 +150,7 @@ const Accueil: React.FC = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/home/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>

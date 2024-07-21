@@ -61,18 +61,18 @@ const Carte = () => {
                         <Button variant="contained" href="#contained-buttons" sx={{ width: '50%', marginBottom: '24px' }}>Antipasti à partager</Button>
                     </Box>
                     <StyledBox>
-                        <StyledImage src="/antipasti1.jpg" alt="antipasti" />
+                        <StyledImage src="/img/carte/antipasti1.jpg" alt="antipasti" />
                     </StyledBox>
                     <StyledBox>
-                        <StyledImage src="/antipasti2.jpg" alt="antipasti" />
+                        <StyledImage src="/img/carte/antipasti2.jpg" alt="antipasti" />
                     </StyledBox>
                 </StyledBoxTitle>
                 <StyledBoxTitleReverse>
                     <StyledBox>
-                        <StyledImage src="/salad1.jpg" alt="salad" />
+                        <StyledImage src="/img/carte/salad1.jpg" alt="salad" />
                     </StyledBox>
                     <StyledBox>
-                        <StyledImage src="/salad2.jpg" alt="salad" />
+                        <StyledImage src="/img/carte/salad2.jpg" alt="salad" />
                     </StyledBox>
                     <Box m={2} sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography variant="h3" textAlign="center" sx={{ fontFamily: 'Italianno, cursive', marginBottom: '24px' }}>Salades gourmandes</Typography>
@@ -89,19 +89,19 @@ const Carte = () => {
                         <Button variant="contained" href="#contained-buttons" sx={{ width: '50%', marginBottom: '24px' }}>Pizza</Button>
                     </Box>
                     <StyledBox>
-                        <StyledImage src="/pizza1.jpg" alt="pizza" />
+                        <StyledImage src="/img/carte/pizza1.jpg" alt="pizza" />
                     </StyledBox>
                     <StyledBox>
-                        <StyledImage src="/pizza2.jpg" alt="pizza" />
+                        <StyledImage src="/img/carte/pizza2.jpg" alt="pizza" />
                     </StyledBox>
                 </StyledBoxTitle>
 
                 <StyledBoxTitleReverse>
                     <StyledBox>
-                        <StyledImage src="/pasta1.jpg" alt="pasta" />
+                        <StyledImage src="/img/carte/pasta1.jpg" alt="pasta" />
                     </StyledBox>
                     <StyledBox>
-                        <StyledImage src="/pasta2.jpg" alt="pasta" />
+                        <StyledImage src="/img/carte/pasta2.jpg" alt="pasta" />
                     </StyledBox>
                     <Box m={2} sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography variant="h3" textAlign="center" sx={{ fontFamily: 'Italianno, cursive', marginBottom: '24px' }}>Pasta</Typography>

@@ -1,4 +1,4 @@
-import { Box, Container, Grid,Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import Bandeau from "../components/Bandeau";
 import { styled } from "@mui/system";
 import { theme } from "../components/theme";
@@ -76,7 +76,7 @@ const Blog = () => {
                         <Typography variant="h6" p={5} textAlign="center">DECOUVREZ LA SELECTION DU CHEF</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 0' }}>
-                        <StyledImage src="/blog.jpg" alt="Image 1" />
+                        <StyledImage src="/img/blog/blog.jpg" alt="Image 1" />
                     </Box>
                 </StyledBoxTitle>
             </Container>
@@ -91,7 +91,7 @@ const Blog = () => {
                     <Grid container spacing={6}>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/blog/photo1.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -100,7 +100,7 @@ const Blog = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo2.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/blog/photo2.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -109,7 +109,7 @@ const Blog = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/blog/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -118,7 +118,7 @@ const Blog = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/blog/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -127,7 +127,7 @@ const Blog = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo1.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/blog/photo1.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -136,7 +136,7 @@ const Blog = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo2.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/blog/photo2.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -145,7 +145,7 @@ const Blog = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/blog/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
@@ -154,7 +154,7 @@ const Blog = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={3}>
                             <ImageContainer>
-                                <StyledImageGrid src="/photo3.jpg" alt="Image 1" />
+                                <StyledImageGrid src="/img/blog/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
                                     <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
