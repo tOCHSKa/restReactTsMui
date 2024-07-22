@@ -29,7 +29,6 @@ const Login = () => {
     return (
         <React.Fragment>
             <form autoComplete="off" onSubmit={handleSubmit}>
-                {/* <h2>Formulaire de Connexion</h2> */}
                 <TextField
                     label="Email"
                     onChange={e => setEmail(e.target.value)}

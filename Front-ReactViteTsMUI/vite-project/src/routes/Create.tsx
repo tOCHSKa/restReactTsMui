@@ -1,5 +1,5 @@
 import { Box, Container, Typography } from '@mui/material';
-import RegisterForm from '../components/Register';
+import RegisterForm from '../components/login/Register';
 import Bandeau from '../components/Bandeau';
 
 const Create = () => {

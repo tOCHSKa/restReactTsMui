@@ -1,6 +1,7 @@
 import { Box, Container, Typography } from '@mui/material';
-import Login from '../components/Login';
+// import Login from '../components/login/Login';
 import Bandeau from '../components/Bandeau';
+import LoginMock from '../components/login/LoginMock';
 
 const Connexion = () => {
     return (
@@ -13,7 +14,7 @@ const Connexion = () => {
             <Container sx={{ width: '600px', marginBottom: '3rem' }}>
                 <Box>
                     <Typography variant='h4' textAlign={'center'} margin={5}>FORMULAIRE DE CONNEXION</Typography>
-                    <Login />
+                    <LoginMock />
                 </Box>
             </Container>
         </>
