@@ -42,7 +42,7 @@ const StyledBox = styled(Box)({
     alignItems: 'center',
     justifyContent: 'center',
     padding: '0 0',
-    margin: '16px'
+    margin: '16px',
 });
 
 const Carte = () => {
@@ -58,7 +58,7 @@ const Carte = () => {
                     <Box m={2} sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
                         <Typography variant="h3" textAlign="center" sx={{ fontFamily: 'Italianno, cursive', marginBottom: '24px' }}>Antipasti à partager</Typography>
                         <Typography variant="body1" textAlign="center" sx={{ marginBottom: '24px' }}>Per iniziare una bella serata non c’é niente di meglio che condividere un antipasto in compagnia (anonimo)</Typography>
-                        <Button variant="contained" href="#contained-buttons" sx={{ width: '50%', marginBottom: '24px' }}>Antipasti à partager</Button>
+                        <Button variant="contained" href="#contained-buttons" sx={{ width: '65%', marginBottom: '24px' }}>Antipasti</Button>
                     </Box>
                     <StyledBox>
                         <StyledImage src="/img/carte/antipasti1.jpg" alt="antipasti" />
@@ -78,7 +78,7 @@ const Carte = () => {
                         <Typography variant="h3" textAlign="center" sx={{ fontFamily: 'Italianno, cursive', marginBottom: '24px' }}>Salades gourmandes</Typography>
                         <Typography variant="body1" textAlign="center" sx={{ marginBottom: '24px' }}>Non esiste un profumo più buono del pomodoro e basilico.
                             Sa di casa, di felicità, di condivisione.</Typography>
-                        <Button variant="contained" href="#contained-buttons" sx={{ width: '60%', marginBottom: '24px' }}>Salades gourmandes</Button>
+                        <Button variant="contained" href="#contained-buttons" sx={{ width: '60%', marginBottom: '24px' }}>Salades</Button>
                     </Box>
                 </StyledBoxTitleReverse>
                 <StyledBoxTitle>

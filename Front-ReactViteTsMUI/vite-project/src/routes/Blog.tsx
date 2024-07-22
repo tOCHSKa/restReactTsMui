@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import Bandeau from "../components/Bandeau";
 import { styled } from "@mui/system";
 import { theme } from "../components/theme";
-import SelectComponant from "../components/SelectComponant";
+import SelectComponant from "../components/SelectComponent";
 
 const StyledBoxTitle = styled(Box)(({ theme }) => ({
     display: 'flex',
@@ -68,7 +68,7 @@ const Blog = () => {
                 subtitle="Suivez nos actualités, et apprenez-en plus sur l’Italie;
             son style de vie, ses recettes, ses traditions, mais aussi son patrimoine,
             sa culture et sa richesse gastronomique."
-                extraText="This is Italianno Font"
+                extraText="Sogni gastronomici e culturali"
             />
             <Container maxWidth="lg" sx={{ maxWidth: '1200px' }}>
                 <StyledBoxTitle>
