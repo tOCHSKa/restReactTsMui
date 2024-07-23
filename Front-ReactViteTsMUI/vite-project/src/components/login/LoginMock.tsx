@@ -77,7 +77,7 @@ const LoginComponent: React.FC = () => {
         />
         {/* Bouton de soumission du formulaire */}
         <Button variant="contained" color="primary" type="submit">
-          Login
+          Connexion
         </Button>
       </form>
       {/* Affichage de la réponse de l'API */}
