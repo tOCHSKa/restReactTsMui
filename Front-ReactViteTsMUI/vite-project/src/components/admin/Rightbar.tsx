@@ -6,15 +6,15 @@ const Sidebar = () => {
 
         <Box flex={2} p={2} sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Box position="fixed" width={300}>
-                <Typography variant="h6">Online Friends</Typography>
+                {/* <Typography variant="h6">Online Friends</Typography>
                 <AvatarGroup max={4}>
                     <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
                     <Avatar alt="Travis Howard" src="https://material-ui.com/static/images/avatar/2.jpg" />
                     <Avatar alt="Cindy Baker" src="https://material-ui.com/static/images/avatar/3.jpg" />
                     <Avatar alt="Agnes Walker" src="https://material-ui.com/static/images/avatar/4.jpg" />
                     <Avatar alt="Trevor Henderson" src="https://material-ui.com/static/images/avatar/5.jpg" />
-                </AvatarGroup>
-                <Typography variant="h6" mt={2} mb={2}>Latest Posts</Typography>
+                </AvatarGroup> */}
+                <Typography variant="h6" mt={2} mb={2}>Derniers Posts</Typography>
                 <ImageList cols={3} rowHeight={120} gap={5}>
                     <ImageListItem>
                         <img src="https://material-ui.com/static/images/image-list/breakfast.jpg" alt="breakfast"></img>
@@ -26,7 +26,7 @@ const Sidebar = () => {
                         <img src="https://material-ui.com/static/images/image-list/breakfast.jpg" alt="breakfast"></img>
                     </ImageListItem>
                 </ImageList>
-                <Typography variant="h6" mt={2}>Latest Conversation</Typography>
+                <Typography variant="h6" mt={2}>Derniers Avis</Typography>
                 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem alignItems="flex-start">
                         <ListItemAvatar>

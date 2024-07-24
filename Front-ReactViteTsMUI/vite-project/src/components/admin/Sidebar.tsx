@@ -1,7 +1,11 @@
 import { AccountBox, Book, Mail, ModeNight, Person, Settings } from "@mui/icons-material"
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from "@mui/material"
 
-const Sidebar = () => {
+interface modeProps {
+    mode: string;
+    setMode: (value: string)=> void;
+}
+const Sidebar: React.FC<modeProps> = ({mode, setMode}) => {
     return (
 
         <Box flex={1} p={2} sx={{ display: { xs: 'none', sm: 'block' } }}>
@@ -12,7 +16,7 @@ const Sidebar = () => {
                         <ListItemIcon>
                             <Person />
                         </ListItemIcon>
-                        <ListItemText primary="Utilisateur" />
+                        <ListItemText primary="Utilisateurs" />
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
@@ -36,7 +40,7 @@ const Sidebar = () => {
                         <ListItemIcon>
                             <Settings />
                         </ListItemIcon>
-                        <ListItemText primary="Settings" />
+                        <ListItemText primary="Paramètres" />
                     </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
@@ -52,7 +56,7 @@ const Sidebar = () => {
                         <ListItemIcon>
                             <ModeNight />
                         </ListItemIcon>
-                        <Switch />
+                        <Switch onChange={e=>setMode(mode ==="light"? "dark" : "light")}/>
                     </ListItemButton>
                 </ListItem>
             </List>

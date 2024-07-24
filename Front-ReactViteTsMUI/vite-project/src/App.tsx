@@ -13,7 +13,7 @@ const Carte = lazy(() => import('./routes/Carte'));
 const Galerie = lazy(() => import('./routes/Galerie'));
 const Contact = lazy(() => import('./routes/Contact'));
 const Admin = lazy(() => import('./routes/Admin'));
-// const NotFound = lazy(() => import('./routes/NotFound'));
+const NotFound = lazy(() => import('./routes/NotFound'));
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -34,6 +34,7 @@ const App: React.FC = () => {
           <Route path="/connexion" element={<Connexion />} />
           <Route path="/register" element={<Create />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Suspense>
       {showNavbarAndFooter && <Footer />}

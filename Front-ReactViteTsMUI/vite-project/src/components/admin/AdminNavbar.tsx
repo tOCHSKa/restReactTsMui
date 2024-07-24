@@ -1,11 +1,12 @@
 import { AdminPanelSettings, Mail } from "@mui/icons-material"
 import { AppBar, Avatar, Badge, Box, InputBase, Menu, MenuItem, styled, Toolbar, Typography } from "@mui/material"
 import { useState } from "react";
+import { theme } from "../theme"
 
-const StyledToolBar = styled(Toolbar)({
+const StyledToolBar = styled(Toolbar)(({theme}) => ({
   display: "flex",
   justifyContent: "space-between",
-});
+}));
 
 const Search = styled('div')(({ theme }) => ({
   backgroundColor: "white",
