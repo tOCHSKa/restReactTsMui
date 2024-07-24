@@ -1,4 +1,4 @@
-import { AccountBox, Book, Home, Mail, ModeNight, Person, Settings } from "@mui/icons-material"
+import { AccountBox, Book, Mail, ModeNight, Person, Settings } from "@mui/icons-material"
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from "@mui/material"
 
 const Sidebar = () => {

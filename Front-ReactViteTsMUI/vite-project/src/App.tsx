@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Create from './routes/Create';
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Loader from './components/Loader';
 
 const Accueil = lazy(() => import('./routes/Accueil'));
 const Blog = lazy(() => import('./routes/Blog'));
@@ -20,9 +21,10 @@ const App: React.FC = () => {
 
   return (
     <>
+    <Loader/>
       <ScrollToTop />
       {showNavbarAndFooter && <Navbar />}
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading ...</div> }>
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/carte" element={<Carte />} />

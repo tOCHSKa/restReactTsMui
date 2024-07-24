@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import { ThemeProvider, CssBaseline } from '@mui/material'
+
 import { theme } from "./components/theme.tsx"
+import { ThemeProvider } from '@mui/material/styles'
+import { CssBaseline } from '@mui/material'
+import App from './App.tsx'
 
 
 
