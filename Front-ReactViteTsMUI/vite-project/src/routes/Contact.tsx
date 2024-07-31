@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
                     <Typography variant="h6" sx={{ mt: 2 }}>Samedi</Typography>
                     <Typography variant="body1">11h30 - 14h30 • 19h00 - 22h00</Typography>
                 </Box>
-                <Box sx={{  margin: '3rem 0' }}>
+                <Box sx={{  margin: '5.1rem 0' }}>
                     <IFrameComponent
                         src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=20%20rue%20des%20%C3%A9coles+(La%20FOSSETA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                         title="Exemple d'Iframe"

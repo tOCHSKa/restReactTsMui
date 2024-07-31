@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, Typography, withTheme } from "@mui/material";
 import Bandeau from "../components/Bandeau";
 import { styled } from "@mui/system";
 import { theme } from "../components/theme";
@@ -94,7 +94,7 @@ const Blog = () => {
                                 <StyledImageGrid src="/img/blog/photo1.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                    <Typography variant="body1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -103,7 +103,7 @@ const Blog = () => {
                                 <StyledImageGrid src="/img/blog/photo2.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                    <Typography variant="body1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -112,7 +112,7 @@ const Blog = () => {
                                 <StyledImageGrid src="/img/blog/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                    <Typography variant="body1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -121,7 +121,7 @@ const Blog = () => {
                                 <StyledImageGrid src="/img/blog/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                    <Typography variant="body1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -130,7 +130,7 @@ const Blog = () => {
                                 <StyledImageGrid src="/img/blog/photo1.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                    <Typography variant="body1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -139,7 +139,7 @@ const Blog = () => {
                                 <StyledImageGrid src="/img/blog/photo2.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                    <Typography variant="body1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -148,7 +148,7 @@ const Blog = () => {
                                 <StyledImageGrid src="/img/blog/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                    <Typography variant="body1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
@@ -157,7 +157,7 @@ const Blog = () => {
                                 <StyledImageGrid src="/img/blog/photo3.jpg" alt="Image 1" />
                                 <CenteredBox>
                                     <Typography variant="h5">La carte</Typography>
-                                    <Typography variant="body2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
+                                    <Typography variant="body1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.</Typography>
                                 </CenteredBox>
                             </ImageContainer>
                         </Grid>
