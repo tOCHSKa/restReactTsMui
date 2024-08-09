@@ -1,4 +1,4 @@
-import { Box, Container, styled } from '@mui/material'
+import { styled } from '@mui/material'
 import Bandeau from '../components/Bandeau'
 
 const NotFound = () => {

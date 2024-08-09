@@ -39,7 +39,7 @@ const Add = () => {
   return (
     <>
       <Tooltip
-        onClick={(e) => setOpen(true)}
+        onClick={() => setOpen(true)}
         title="Add"
         sx={{
           position: "fixed",
@@ -47,13 +47,13 @@ const Add = () => {
           left: { xs: "calc(50% - 25px)", md: 30 },
         }}
       >
-        <Fab color="primary" aria-label="add">
+        <Fab aria-label="add">
           <AddIcon />
         </Fab>
       </Tooltip>
       <SytledModal
         open={open}
-        onClose={(e) => setOpen(false)}
+        onClose={() => setOpen(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >

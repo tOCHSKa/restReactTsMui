@@ -1,12 +1,11 @@
 import { AdminPanelSettings, Mail } from "@mui/icons-material"
 import { AppBar, Avatar, Badge, Box, InputBase, Menu, MenuItem, styled, Toolbar, Typography } from "@mui/material"
 import { useState } from "react";
-import { theme } from "../theme"
 
-const StyledToolBar = styled(Toolbar)(({theme}) => ({
+const StyledToolBar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
-}));
+});
 
 const Search = styled('div')(({ theme }) => ({
   backgroundColor: "white",
@@ -47,10 +46,10 @@ const AdminNavbar = () => {
           <Badge badgeContent={4} color="error">
             <Mail />
           </Badge>
-          <Avatar onClick={e => setOpen(true)} sx={{ width: 30, height: 30 }} src="https://www.pexels.com/fr-fr/photo/femme-en-chemise-a-col-774909/" ></Avatar>
+          <Avatar onClick={() => setOpen(true)} sx={{ width: 30, height: 30 }} src="https://www.pexels.com/fr-fr/photo/femme-en-chemise-a-col-774909/" ></Avatar>
         </Icons>
         <UserBox>
-          <Avatar onClick={e => setOpen(true)} sx={{ width: 30, height: 30 }} src="https://www.pexels.com/fr-fr/photo/femme-en-chemise-a-col-774909/" ></Avatar>
+          <Avatar onClick={() => setOpen(true)} sx={{ width: 30, height: 30 }} src="https://www.pexels.com/fr-fr/photo/femme-en-chemise-a-col-774909/" ></Avatar>
           <Typography variant="body1">Kevin</Typography>
         </UserBox>
       </StyledToolBar>
@@ -58,7 +57,7 @@ const AdminNavbar = () => {
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
         open={open}
-        onClose={e => setOpen(false)}
+        onClose={() => setOpen(false)}
         anchorOrigin={{
           vertical: 'top',
           horizontal: 'right',

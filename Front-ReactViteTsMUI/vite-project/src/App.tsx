@@ -21,10 +21,10 @@ const App: React.FC = () => {
 
   return (
     <>
-    <Loader/>
+      <Loader />
       <ScrollToTop />
       {showNavbarAndFooter && <Navbar />}
-      <Suspense fallback={<div>Loading ...</div> }>
+      <Suspense fallback={<div>Loading ...</div>}>
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/carte" element={<Carte />} />
