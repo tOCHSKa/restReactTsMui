@@ -1,19 +1,20 @@
-vite-project/
+frontend/
 ├── public/                     # Fichiers statiques accessibles publiquement
 ├── src/                        # Code source frontend
 │   ├── components/             # Composants React
 │   ├── pages/                  # Pages de l'application
 │   ├── lib/                    # Fonctionnalités utilitaires
 │   └── main.tsx                # Point d'entrée de l'application React
-├── server/                     # Code backend
-│   ├── routes/                 # Définition des routes
-│   ├── controllers/            # Logique métier
-│   ├── models/                 # Modèles de données
-│   ├── config/                 # Configuration (par exemple, base de données)
-│   └── server.ts               # Fichier principal pour démarrer le serveur Express
 ├── .gitignore                  # Fichiers et dossiers à ignorer par Git
 ├── index.html                  # Fichier HTML principal pour Vite
 ├── package.json                # Dépendances et scripts du projet
 ├── tsconfig.json               # Configuration TypeScript
 ├── vite.config.ts              # Configuration Vite
 └── README.md                   # Documentation du projet
+backend/
+├── server/                     # Code backend
+│   ├── routes/                 # Définition des routes
+│   ├── controllers/            # Logique métier
+│   ├── models/                 # Modèles de données
+│   ├── config/                 # Configuration (par exemple, base de données)
+│   └── server.ts               # Fichier principal pour démarrer le serveur Express
