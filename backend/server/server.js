@@ -2,7 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import connectToDb from './db'; // Assurez-vous que le chemin est correct
+import connectToDb from './db.js'; // Assurez-vous que le chemin est correct
 
 const app = express();
 const port = 3001;
